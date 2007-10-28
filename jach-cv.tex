@@ -1,0 +1,253 @@
+% cv-us.tex
+% $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $
+%
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2006 Jason Blevins
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents, however, I do ask that you
+% please leave this notice and the above URL in the source code if you
+% choose to redistribute this file.
+%
+% Jason R. Blevins <jrblevin@sdf.lonestar.org>
+% http://jrblevin.freeshell.org
+% Durham, December 12, 2006
+%
+%%---------------------------------------------------------------------------%
+%
+% Notes:
+%
+% * Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
+%   section below.
+%
+% * To create a new page use: \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass statement to put headings in margin:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * Can divide publication/presentation list into subsections by year:
+%   \section{\bf\small\hspace{8mm}2006}
+%
+%%----------------------------------------------------------------------------%
+
+\documentclass[overlapped,line,letterpaper]{res}
+
+\usepackage{ifpdf}
+
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+
+\hypersetup{
+  letterpaper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
+  pdfauthor={Joseph Anthony C. Hermocilla},
+  pdfcreator={},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={computer science multiagent systems}
+}
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\large\textbf}
+
+%---------------------------------------------------------------------------
+
+\name{Joseph Anthony C. Hermocilla}
+
+\begin{resume}
+
+\begin{ncolumn}{2}
+  Institute of Computer Science 					& Phone: (049) 536-2313 \\
+  College of Arts and Sciences  					& Fax: (049) 536-2302 \\
+  University of the Philippines Los Ba\~{n}os   	& {\tt jachermocilla@gmail.com} \\
+  College, Los Ba\~{n}os, Laguna 4031				& {\tt \verb+http://jachermocilla.googlepages.com/index.html+} \\
+  Philippines		     				    	& \\
+\end{ncolumn}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Education}
+M.S. Computer Science, University of the Philippines Los Ba\~{n}os, 2007 (Expected)	\\
+B.S. Computer Science, University of the Philippines Los Ba\~{n}os, 2002				\\
+High School, Ateneo de Naga University, 1996							\\
+Elementary, Naga Parochial School, 1992
+
+%---------------------------------------------------------------------------
+
+\section{\bf Research}
+
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body\\
+\end{format}
+
+%\title{Graduate Student}
+%\employer{Institute of Computer Science}
+%\location{University of the Philippines Los Ba\~{n}os}
+%\dates{2002--Present}
+%\begin{position}
+Research interests include multiagent systems, distributed systems
+, operating systems, aritificial intelligence, data structures and algorithms
+, data communications and networking, parallel programming, and computer security.
+
+Master's Thesis: A Multiagent Approach to UPLB Course Enlistment
+%\end{position}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Teaching}
+
+\begin{itemize}
+%\item Mathematics Tutor, North Carolina State University, 2001
+\item Instructor, Computer Science Courses (Undergraduate),
+Institute of Computer Science, University of the Philippines Los Ba\~{n}os, 2002 - present
+\item Instructor, Linux Training (UPLB Employees), 
+Institute of Computer Science, University of the Philippines Los Ba\~{n}os, 2005
+\item Instructor, Open Source Software Development using LAMP (FNRI employees), 
+Food and Nutrition Institute, Department of Science and Technology, 2006
+\item Instructor, Linux Training (UPOU Employees), 
+University of the Philippines Open University, 2004
+\item Instructor, Linux Training (E-Konek employees), 
+E-Konek, 2004
+\item Tutor, Programming in C (UPOU students), 
+University of the Philippines Open University, 2003
+\end{itemize}
+
+%------------------------------------------------------------------------------
+
+%\section{\bf Employment}
+%
+% \begin{format}
+% \employer{l}\location{r}\\
+% \title{l}\dates{r}\\
+% \body\\
+% \end{format}
+%
+% \title{Computer Technician}
+% \employer{Hurley Technology Resources}
+% \location{Jefferson, NC}
+% \dates{1999--2000}
+% \begin{position}
+% Windows and UNIX networking for businesses and internet service providers,
+% in- and out-of-house PC repair, sales, technical support, and database driven
+% web site design. Supervisor: Cyrus Hurley.
+% \end{position}
+
+%------------------------------------------------------------------------------
+\section{\bf Courses Taught}
+Introduction to Personal Computing, Object-oriented Programming, Web Programming
+, Data Structures, Programming Languages, Operating Systems, File Processing and Database Systems
+, Introduction to Software Engineering, Machine Organization and Assembly Language Programming
+, Data Communications and Networking
+, Numerical and Symbolic Computation
+
+\section{\bf Invited Talks}
+\begin{itemize}
+\item Open Source Revolution, Laguna State Polytechnic Colleges, Los Ba\~{n}os and
+San Pablo Campus
+\end{itemize}
+
+\section{\bf Software Development}
+\begin{itemize}
+\item {\texttt{Business Permit Acquisition System}}(2003-2005), A web application for processing business permits in the
+Municipality of Los Ba\~{n}os, sponsored by the local government
+\item {\texttt{GEMS-GCP Wrapper}}(2007), A Java application which is part of the Generation Challenge Program,
+sponsored by IRRI
+\item {\texttt{JAIDE}}(2002), A Java IDE, Undergraduate Special Problem
+
+\end{itemize}
+
+%\section{\bf Working Papers}
+
+%``The Effects of Ties on Convergence in K-Modes Variants for Clustering
+%Categorical Data,''
+%with N.\ Orlowski, D.\ Schlorff, D.\ Ca\~{n}as, M.\ T.\ Chu,
+%and R.\ E.\ Funderlic (2004).
+
+%``Updating the Centroid Decomposition with Applications in LSI,''
+%with M.\ T.\ Chu, D.\ Ca\~{n}as, R.\ E.\ Funderlic, N.\ Orlowski,
+%and D.\ Schlorff (2004).
+
+%``Structural Estimation of Sequential Games of Complete Information'' (2006).
+
+%------------------------------------------------------------------------------
+
+%%===========================================================================%%
+\newpage
+\opening
+
+%\section{\bf Scientific Software}
+
+%Blevins, J., J. Heath, and W. Hereman (2002):
+%\href{http://www.mines.edu/fs_home/whereman/software/PDESolutionTester/}
+%{\texttt{PDESolutionTester}},
+%A Mathematica program for the symbolic verification of exact solutions of
+%nonlinear partial differential equations.
+
+%------------------------------------------------------------------------------
+
+%\section{\bf Presentations}
+%
+%``Solving Nonlinear Wave Equations with Mathematica,''
+%North Carolina State University, April 23, 2003.
+
+%---------------------------------------------------------------------------
+
+\section{\bf Technical Skills}
+
+\begin{itemize}
+\item Operating Systems: Linux, Windows 3.1/95/98/ME/XP, Solaris
+\item Languages: C/C++, Java, PHP, HTML, XML, x86 Assembly Language, Javascript, PERL, Python,
+UML, Visual Basic, SQL, LISP, COBOL
+\item IDE: Microsoft Visual Studio, Eclipse, NetBeans
+\item Database: MySQL, PostgresSQL, Hibernate
+\item Productivity Tools: OpenOffice, Microsoft Office
+\item System/Network Administration: TCP/IP, DNS, FTP, Apache, LDAP, Mail Server
+\item Others: JSP, CVS, SVN
+\end{itemize}
+
+%%---------------------------------------------------------------------------%%
+
+%\section{\bf Honors and Awards}
+%\begin{itemize}
+%\item \href{http://www.pbk.org/}{Phi Beta Kappa}, 2003
+%\item Undergraduate Research Award, North Carolina State University, 2004
+%\item Outstanding Teaching Assistant Award, Duke University, 2006
+%\end{itemize}
+
+%%---------------------------------------------------------------------------%%
+
+%\begin{center}
+%\vspace{\fill}\ \newline
+%{\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
+%{\tiny \rm $ $Date: 2006/12/12 22:53:52 $ $ }
+%{\tiny \rm $ $Revision: 1.28 $ $ }
+%\end{center}
+
+\end{resume}
+
+\end{document}
+
+%%===========================================================================%%
