@@ -2,7 +2,11 @@ h2{
   	font-family: "sans-serif";
 }
 
-p, li, h1, body {
+p{
+  	font-family: "sans-serif";
+}
+
+li, h1, body {
 	font-size: 10pt;
   	font-family: "sans-serif";
 }
