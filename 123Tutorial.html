@@ -1,0 +1,145 @@
+<html>
+		  <head><title>Tutorial</title></head>
+		  
+<body>
+
+		  <h3>CMSC 123 Tutorial</h3>
+		  <h5>Summer 2007-2008</h5>
+
+		  <p>
+	This tutorial will introduce you to the process of creating
+and submitting laboratory exercises in CMSC 123. In every exercise,
+you will be handed a tar file that contains a set of files that
+will serve as your starting point. Let's get started..
+			</p>
+
+			<ol>			
+					  <li> Download the sample tar file: <pre>$wget http://10.0.3.1/~jach/123sample.tar.gz</pre> </li>
+					  <li> Extract the tar file: <pre>$tar xzvf 123sample.tar.gz</pre></li>
+					  <p>
+					  You'll get following files: <i>Makefile, max.h, max_test.c, README</i>
+						</p>
+
+						<li>Run make: <pre>$make</pre></li>
+						<pre>make: *** No rule to make target `max.c', needed by `max.o'.  Stop.</pre>
+						<p>
+						The error above will be displayed, which simply means that <i>max.c</i> is
+						needed to build the program but it was not found.
+						</p>
+
+
+						<li>Create an empty file max.c then run make again: <pre>$touch max.c; make</pre> </li>
+
+						<pre>gcc  -c max.c
+gcc  -c max_test.c max.o -lcunit
+gcc: max.o: linker input file unused because linking not done
+gcc: -lcunit: linker input file unused because linking not done
+gcc  -o max_test.exe max_test.o max.o -lcunit
+max_test.o(.text+0x24): In function `test_maxi':
+: undefined reference to `maxi'
+max_test.o(.text+0x5d): In function `test_maxi':
+: undefined reference to `maxi'
+max_test.o(.text+0x95): In function `test_maxi':
+: undefined reference to `maxi'
+collect2: ld returned 1 exit status
+make: *** [max_test.exe] Error 1
+</pre>
+	<p>						
+	The above error will be displayed which indicates that there is an
+	<i>undefined reference</i> to a function maxi which is true because we 
+	have not defined a function named maxi yet.
+	</p>
+
+	<li>	In order to define <i>maxi</i>, let's look at the prototype of ths function
+	in the header file <i>max.h</i> </li>
+	
+<pre>#include <stdio.h>
+#ifndef __MAX_H__
+#define __MAX_H__
+
+int maxi(int i1, int i2);
+
+#endif</pre>
+ 
+	<li> We now define the <i>maxi</i> function based on the prototype inside
+	<i>max.c</i></li>
+	
+<pre>#include &lt;stdio.h&gt;
+#include "max.h"
+
+/**
+ * Returns the maximum of two numbers
+ *
+ * @param i1 the first number
+ * @param i2 the second number
+ * @return the maximum of i1 and i2
+ *
+ */
+int maxi(int i1, int i2){
+   int retval=0;
+   if (i1 > i2){
+  		retval = i1;
+   }else{
+   	retval = i2;
+   }
+   return retval;
+}
+</pre>
+	
+	<li> Run make again: <pre>$make</pre></li>
+
+
+<pre>     CUnit - A Unit testing framework for C - Version 2.1-0
+     http://cunit.sourceforge.net/
+
+
+Suite: Suite_1
+  Test: Test of maxi() ... passed
+
+--Run Summary: Type      Total     Ran  Passed  Failed
+               suites        1       1     n/a       0
+               tests         1       1       1       0
+               asserts       3       3       3       0
+
+</pre>
+
+	<p>	
+	The result above shows that all the test passed which
+	means that we have properly defined the function <i>maxi</i>.
+	If you want to see how <i>maxi</i> was tested, look inside
+	<i>max_test.c</i>. CUnit is used as the unit testing framework.
+
+	</p>	
+	
+	<li>Document your work by editing <i>README</i></li>  
+
+	<li>Indicate your initials in <i>Makefile</i>. You can use your initials.</li>
+	<pre>INITIALS=jach</pre>
+
+	<li>To submit the finished exercise: <pre>$make submit</pre></li>
+	<p>A file named <i>jach-sample.tar.gz</i> will be created in the directory above <i>sample</i>.
+	This tar file is what you are going to submit to your instructor.
+
+	<li>Summary</li>
+	<p>
+	To do your exercises in the class, the following steps
+	will be followed.</p>
+	<p>
+	<ol>
+		<li> Download the exercise tar file. </li>
+		<li>Define the functions declared in the header file.</li>
+		<li>Make sure that the functions passed the defined tests.</li>
+		The tests are defined by the instructor.
+		<li> Your grade for the exercise is equal to (passed asserts/total asserts)</li>
+		<li> Document your work in <i>README</i> </li>
+		<li> Submit your work. </li>
+		
+	</ol>
+	</p>
+</ol>
+
+
+
+
+
+
