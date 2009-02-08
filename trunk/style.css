@@ -1,4 +1,4 @@
-h2{
+h1,h2{
   	font-family: "arial,sans-serif";
 }
 
@@ -6,7 +6,7 @@ p{
   	font-family: "arial,sans-serif";
 }
 
-li, h1, body {
+li,body {
 	font-size: 10pt;
   	font-family: "arial,sans-serif";
 }
