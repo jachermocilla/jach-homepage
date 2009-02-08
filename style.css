@@ -7,12 +7,12 @@ p{
 }
 
 a{
-   color: #4477AA;
+   color: #FFCC00;
 }
 
 td,li,body {
 	font-size: 10pt;
   	font-family: "arial,sans-serif";
-   background: #5599BB;
-   color: #335566;
+   background: #4477AA;
+   color: #FFFFFF;
 }
