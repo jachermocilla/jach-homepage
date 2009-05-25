@@ -1,5 +1,5 @@
 " UHSIS coding
-source ./vimrc
+source /etc/vim/vimrc
 set ts=2 expandtab
 retab
 set shiftwidth=2
