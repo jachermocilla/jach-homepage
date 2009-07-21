@@ -16,3 +16,8 @@ td,li,body {
    background: #4477AA;
    color: #FFFFFF;
 }
+
+tr.exam {
+   color: yellow;
+   background: green;
+}
