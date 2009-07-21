@@ -17,7 +17,7 @@ td,li,body {
    color: #FFFFFF;
 }
 
-tr.exam {
-   color: yellow;
+.exam {
    background: green;
+   color: yellow;
 }
