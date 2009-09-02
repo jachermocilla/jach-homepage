@@ -1,0 +1,122 @@
+\documentclass{acm_proc_article-sp}
+\begin{document}
+
+\title{Enhancing Undergraduate Operating Systems Course Through 
+A Real Operating System}
+
+\numberofauthors{2}
+\author{
+\alignauthor
+Joseph Anthony C. Hermocilla\\
+       \affaddr{Institute of Computer Science}\\
+       \affaddr{University of the Philippines Los Ba\~nos}\\
+       \affaddr{College 4031, Laguna, Philippines}\\
+       \email{jachermocilla@uplb.edu.ph}
+\alignauthor
+Joseph Emmanuel DL. Dayo\\
+       \affaddr{Friendster, Incorporated}\\      
+       \email{joseph.dayo@gmail.com}
+}
+\date{02 September 2009}
+
+\maketitle
+\begin{abstract}
+Operating systems is a fundamental knowledge area in Computer Science Education
+emphasized by the ACM and IEEE review task force for the Computer Science 
+Curriculum. An operating system is a piece of software that provides a layer 
+of abstraction to make it easy and convenient for users to control the hardware.
+The many services and functions supported by an operating system makes it a
+rather complex piece of software comprising of several hundreds to thousand
+lines of source code. This paper presents the experiences and results of using
+ICS-OS for teaching operating systems concepts to undergraduate students at the
+Institute of Computer Science, University of the Philippines Los Banos. 
+Traditional approaches to teaching operating systems concepts has relied on 
+simulations and user space application development because of the large source
+code base of currently available open source and commercial operating systems.
+However, these approaches are not enough since students do not see their 
+programs working at the kernel level. ICS-OS is a fully functional operating 
+system, based on DEX-OS, with a small source code base making it ideal for 
+teaching. At the end of the semester the course was offered, the students were
+able to create interesting projects related to operating systems concepts that
+demonstrate their understanding and appreciation.
+\end{abstract}
+
+\keywords{operating systems, computer science education} 
+
+\section{Introduction}
+
+\section{Significance}
+
+\section{Related Work}
+
+\subsection{Minix}
+Minix has been around for several years already and has been the running 
+example in the textbook, Operating Systems: Design and Implementation by 
+Andrew Tanenbaum. Since its initial release, Minix has grown in size in terms
+of source code as well as in complexity. 
+
+\subsection{Nachos}
+
+\subsection{GeekOS}
+
+GeekOS is another instructional operating system that runs on real hardware. 
+It was developed by David Hovemeyer and used for instruction at the Department 
+of Computer Science, University of Maryland. The design goals for GeekOS are
+simplicity, realism, and understandability. The main features of GeekOS include interrupt handling, heap memory allocator, time-sliced kernel threads with 
+static priority scheduling, mutexes and condition variables, user mode 
+with segmentation-based memory protection, and device drivers for keyboard 
+and VGA.
+
+
+\subsection{Dex-OS}
+Dex-OS was developed by Joseph Emmanuel Dayo. Dex-OS was opensourced under 
+the GPL with the original project hosted at SourceForge. Its design is based on
+an Aspect Oriented Approach to address cross-cutting concerns in operating 
+systems design and implementation. A layered approach was taken based on 
+modern operating systems like linux and windows. The following are the main
+components of DEX-OS.
+
+\textit{Memory Manager}
+
+The memory manager is responsible for allocating memory to various components
+of the operating system, including processes. It is further divided into 
+low-level memory manager for setting up the GDT and high-level memory manager
+for high-level functions such as malloc() and free().
+
+\textit{Device Manager}
+
+The device manager handles operations related to common devices and peripherals.
+Device drivers for keyboard, display, and disk drives are managed by this 
+module. Each device being managed is identified by a device id. 
+
+\textit{Process Manager}
+
+The process manager is responsible for handling process management functions
+including process creation, process dispatching, process scheduling, process
+synchronization, and process termination. 
+
+\textit{Virtual Filesystem}
+
+The Virtual File System (VFS) provides an device-independent abstraction for
+various directory and file operations. Functions that are part of the VFS are
+implemented by the low-level file system drivers. In particular, DEX-OS 
+supports the Microsoft FAT12, FAT16, and FAT32 file systems.
+
+\section{Methodology}
+
+\subsection{Setup a linux development environment}
+The original development environment for DEX-OS was in Windows and uses the 
+Dev-C++ IDE. Since the laboratory rooms of the students were classes are held
+use linux, the first step was to migrate the development development into 
+linux. The following steps were taken.
+
+\section{Results and Discussion}
+
+\section{Conclusion}
+
+\bibliographystyle{abbrv}
+\bibliography{jach-ncite09.bbl}
+\balancecolumns
+
+
+\end{document}
