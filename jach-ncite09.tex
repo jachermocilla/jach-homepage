@@ -1,7 +1,7 @@
 \documentclass{acm_proc_article-sp}
 \begin{document}
 
-\title{Enhancing Undergraduate Operating Systems Course Through 
+\title{Enhancing Undergraduate Operating Systems Course Delivery Through 
 A Real Operating System}
 
 \numberofauthors{2}
@@ -21,31 +21,34 @@ Joseph Emmanuel DL. Dayo\\
 
 \maketitle
 \begin{abstract}
-Operating systems is a fundamental knowledge area in Computer Science Education
-emphasized by the ACM and IEEE review task force for the Computer Science 
-Curriculum. An operating system is a piece of software that provides a layer 
-of abstraction to make it easy and convenient for users to control the hardware.
-The many services and functions supported by an operating system makes it a
-rather complex piece of software comprising of several hundreds to thousand
-lines of source code. This paper presents the experiences and results of using
-ICS-OS for teaching operating systems concepts to undergraduate students at the
-Institute of Computer Science, University of the Philippines Los Banos. 
-Traditional approaches to teaching operating systems concepts has relied on 
-simulations and user space application development because of the large source
-code base of currently available open source and commercial operating systems.
-However, these approaches are not enough since students do not see their 
-programs working at the kernel level. ICS-OS is a fully functional operating 
-system, based on DEX-OS, with a small source code base making it ideal for 
-teaching. At the end of the semester the course was offered, the students were
-able to create interesting projects related to operating systems concepts that
-demonstrate their understanding and appreciation.
+Operating systems is a fundamental knowledge area in computer science education
+emphasized by the ACM and IEEE review task force for the computer science 
+curriculum. The many concepts, services, and functions supported by an operating
+system makes it a complex piece of software composed of hundreds to thousands
+lines of source code. This paper presents the experiences and results of using 
+ICS-OS to teach an undergraduate operating systems course. ICS-OS a fork of
+DEX-OS, is a fully functional operating system with a small source 
+code base which makes it ideal for teaching. Traditional teaching approaches
+has relied on simulations and user space application development. However, 
+these are not enough since students do not see their programs working at the
+kernel level. At the end of the semester the course was offered, the students 
+were able to create interesting projects that demonstrate their understanding
+and appreciation.
 \end{abstract}
 
-\keywords{operating systems, computer science education} 
+\keywords{operating systems, computer science education, information technology
+ education} 
 
 \section{Introduction}
+An operating system is a piece of software that provides a layer 
+of abstraction to make it easy and convenient for users to control the hardware.
 
 \section{Significance}
+Current approaches to teaching operating systems to undergraduates does not
+involve programming the components of an actual operating system that can run
+on real hardware. Simulations are used or user level application development.
+Students, however, are more interested in writing code that can run at the
+kernel level instead of just user level. 
 
 \section{Related Work}
 
@@ -56,6 +59,22 @@ Andrew Tanenbaum. Since its initial release, Minix has grown in size in terms
 of source code as well as in complexity. 
 
 \subsection{Nachos}
+Nachos is instructional software for teaching undergraduate, and potentially
+graduate, level operating systems courses. The Nachos distribution
+comes with: 
+
+   an overview paper
+   simple baseline code for a working operating system
+   a simulator for a generic personal computer/workstation
+   sample assignments
+   a C++ primer (Nachos is written in an easy-to-learn subset of C++, 
+     and the primer helps teach C programmers our subset)
+
+The assignments illustrate and explore all areas of modern operating
+systems, including threads and concurrency, multiprogramming, 
+system calls, virtual memory, software-loaded TLB's, file systems, 
+network protocols, remote procedure call, and distributed systems.
+
 
 \subsection{GeekOS}
 
@@ -107,8 +126,13 @@ supports the Microsoft FAT12, FAT16, and FAT32 file systems.
 \subsection{Setup a linux development environment}
 The original development environment for DEX-OS was in Windows and uses the 
 Dev-C++ IDE. Since the laboratory rooms of the students were classes are held
-use linux, the first step was to migrate the development development into 
+use linux, the first step was to migrate the development environment to 
 linux. The following steps were taken.
+
+The Makefile is the primary mechanism to build the ICS-OS kernel and 
+generate a distribution floppy. The original Makefile and Linker Script
+was converted to generate an ELF kernel image (linux) instead of COFF.
+
 
 \section{Results and Discussion}
 
