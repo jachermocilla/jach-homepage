@@ -132,30 +132,26 @@ memory protection, and device drivers for keyboard and VGA.
 DEX-OS\cite{dayo:dexos} is an educational operating system based on
 an Aspect-Oriented Approach to address cross-cutting concerns in operating 
 systems design and implementation. A layered approach was taken based on 
-modern operating systems like Linux and Windows. The following are the main
-components of DEX-OS.
+modern operating systems like Linux and Windows. ICS-OS is mainly based
+on DEX-OS. The following are the main components of DEX-OS.
 
 \textit{Memory Manager}
-
 The memory manager is responsible for allocating memory to various components
 of the operating system, including processes. It is further divided into 
 low-level memory manager for setting up the GDT and high-level memory manager
 for high-level functions such as malloc() and free().
 
 \textit{Device Manager}
-
 The device manager handles operations related to common devices and peripherals.
 Device drivers for keyboard, display, and disk drives are managed by this 
 module. Each device being managed is identified by a device id. 
 
 \textit{Process Manager}
-
 The process manager is responsible for handling process management functions
 including process creation, process dispatching, process scheduling, process
 synchronization, and process termination. 
 
 \textit{Virtual Filesystem}
-
 The Virtual File System (VFS) provides an device-independent abstraction for
 various directory and file operations. Functions that are part of the VFS are
 implemented by the low-level file system drivers. In particular, DEX-OS 
