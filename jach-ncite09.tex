@@ -131,9 +131,9 @@ memory protection, and device drivers for keyboard and VGA.
 \subsection{DEX-OS}
 DEX-OS\cite{dayo:dexos} is an educational operating system based on
 an Aspect-Oriented Approach to address cross-cutting concerns in operating 
-systems design and implementation. A layered approach was taken based on 
-modern operating systems like Linux and Windows. ICS-OS is mainly based
-on DEX-OS. The following are the main components of DEX-OS.
+systems design and implementation.ICS-OS is largely based on DEX-OS, thus
+it warrants a more elaborate discussion. The following are the main components
+of DEX-OS.
 
 \textit{Memory Manager}
 
@@ -159,6 +159,10 @@ The Virtual File System (VFS) provides an device-independent abstraction for
 various directory and file operations. Functions that are part of the VFS are
 implemented by the low-level file system drivers. In particular, DEX-OS 
 supports the Microsoft FAT12, FAT16, and FAT32 file systems.
+
+\testit{Shell}
+The shell provides users with a command line to access the services provided by
+the operating system.
 
 \section{Methodology}
 
