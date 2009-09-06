@@ -139,12 +139,22 @@ systems design and implementation.The main components of DEX-OS are memory
 manager, process manager, device manager, and virtual file system. DEX-OS runs
 on the Intel 386 platform in 32-bit protected mode.
 
-\section{ICS-OS Overview}
+\section{ICS-OS Features}
 Similar to the linux philosophy, one can think of ICS-OS as a 
 \textit{distribution} that is based on the DEX-OS kernel. ICS-OS provides 
 an easy environment for learning operating systems by kernel programming. 
 A set of tools and utilities were implemented to make it easy for students
-to write kernel code.
+to write and modify kernel code. The entire distribution fits in a 
+floppy disk.
+
+ICS-OS is divided into two main components, the kernel and user applications.
+The kernel is loaded at bootup using GRUB as the bootloader. Essentially, the
+kernel stays in the main memory of the computer until shutdown. Since GRUB 
+supports compressed kernel images, it further reduces the size of the kernel.
+
+
+
+
 
 
 
