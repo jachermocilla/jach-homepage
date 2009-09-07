@@ -316,8 +316,8 @@ api\_addsystemcall().The system call number for my\_call() is 0x9F.
 api_addsystemcall(0x9F,my_syscall,0,0)
 \end{verbatim}
 
-A user application was developed to call the system call directly through 
-the number. Figure 6 shows the result.
+A user application was developed to test the system call directly by invoking
+it through the number. Figure 6 shows the result of the execution.
 
 \begin{verbatim}
 int main()
@@ -342,8 +342,8 @@ that can run inside ICS-OS. The following list some of the projects proposed
 and implemented by the students.
 
 \begin{itemize}
-\item{Simple graphical user interface (Figure 7)}
-\item{Standalone shells with advanced features}
+\item{Simple graphical user interface (see Figure 7)}
+\item{Standalone shells with advanced features, such as history}
 \item{Text editor}
 \item{Archiving utilities}
 \item{Help system (similar to man in Unix)}
@@ -352,7 +352,7 @@ and implemented by the students.
 \item{Disk utilities}
 \item{File splitters}
 \item{Enhance process viewers}
-\item{Image viewers (Figure 8)}
+\item{Image viewers (see Figure 8)}
 \item{Simple interpreters}
 \item{Dictionary/Spelling utilities}
 \end{itemize}
@@ -381,10 +381,10 @@ the students did not have enough time to explore and study the source code of
 ICS-OS. Lastly, during the implementation phase of the projects, some of the 
 common functions needed by the students for ther program are not yet
 implemented. Once such function is scanf(). Thus students need to find
-alternative functions to get input from the user.
+alternative functions, such as gets(), to get input from the user.
 
 The use of ICS-OS in teaching operating systems concepts, however, has 
-achieved the following objectives for students.
+achieved the following objectives for the students.
 \begin{itemize}
 \item{They learn how an operating system works from the bare metal 
 (real hardware/emulator).}
@@ -393,7 +393,7 @@ achieved the following objectives for students.
 user space}
 \item{They were able to understand how programs are loaded and how processes 
 are created and executed.}
-\item{They were ablr to understand how system calls work and the advantages
+\item{They were able to understand how system calls work and the advantages
 of using application programming interfaces and software development kits.}
 \end{itemize}
 
