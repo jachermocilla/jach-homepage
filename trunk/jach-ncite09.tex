@@ -211,16 +211,17 @@ to familiarize them with the source code of ICS-OS.
 \subsubsection{Download and Build}
 The first activity is to download the source code of ICS-OS\cite{icsos:site}.
 The source code is distributed in a tar.gz file and via Subversion. 
-After extracting, can  build and test ICS-OS using the commands below.
+After extracting, students can  build and test ICS-OS using the commands below.
 \begin{verbatim}
 (1) $make
 (2) $sudo make install
 (3) $bochs -q
 \end{verbatim}
 
-The second command builds the distribution floppy image and thus requires 
-adminstrator privileges so the \textit{sudo} command is used. The third command
-starts the Bochs\cite{bochs:site} which loads ICS-OS.
+The first command creates the kernel binary.The second command builds the
+distribution floppy image using the loopback device for mounting and thus 
+requires adminstrator privileges so the \textit{sudo} command is used. The
+third command starts Bochs\cite{bochs:site} which loads ICS-OS.
 
 \subsubsection{Adding a new internal shell command}
 
