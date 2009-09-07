@@ -235,8 +235,8 @@ Figure 1).
 The next activity is for the students to modify the kernel, particularly 
 the shell, by adding an internal command. The students was guided to 
 navigate to the console source code (kernel/console/console.c). They were
-asked to modify the function  console\_execute() by adding the following code
-fragment.
+asked to modify the function  console\_execute() by adding the following simple
+code fragment.
 
 \begin{verbatim}
 /*--START--*/
@@ -258,6 +258,41 @@ The result of this activity is shown in Figure 4.
 
 
 \subsubsection{Developing User Applications}
+Application development in ICS-OS is done via a software development kit.
+The externally callable functions and system calls are implemented in the file 
+sdk/tccsdk.c. User programs are linked against this file to generate the
+executable code that is compatible and runnable within ICS-OS. To ease the 
+development process, a Makefile was created to perform the building 
+automatically. 
+
+\begin{verbatim}
+CC=gcc
+ICSOS_ROOT=../..
+SDK=../../sdk
+CFLAGS=-nostdlib -fno-builtin -static
+LIBS=$(SDK)/tccsdk.c $(SDK)/libtcc1.c $(SDK)/crt1.c
+EXE=hello.exe
+
+$(EXE): hello.c
+        $(CC) $(CFLAGS) -o${EXE} hello.c $(LIBS)
+
+install: $(EXE)
+        cp $(EXE) $(ICSOS_ROOT)/apps
+
+uninstall:
+        rm $(ICSOS_ROOT)/apps/$(EXE)
+
+clean:
+        rm $(EXE)
+
+\end{verbatim}
+
+
+In this actvity, students were asked to develop a simple
+program that can be executed from within ICS-OS. 
+
+
+\subsubsection{Student Projects}
 
 \section{Results and Discussion}
 
