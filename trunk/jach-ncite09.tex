@@ -282,16 +282,19 @@ clean:
         rm $(EXE)
 \end{verbatim}
 
-In this actvity, students were asked to develop a simple program that can 
+In this actvity, students were asked to develop an external program that can 
 be executed from within ICS-OS. They created their program folder within
-the contrib/ directory and copied the Makefile. The following commands built 
-their program and prepared the executable for installation later.
+the contrib/ directory and copied the sample Makefile. The \textit{install}
+target in the Makefile will simply copy the executable to the apps/ folder.
+It is only after the distribution floppy is created will the application be
+available inside ICS-OS. 
 
-\begin{verbatim}
- hello$make
- hello$make install
-\end{verbatim}
-
+\begin{figure}
+\centering
+\epsfig{file=helloapp.eps, height=2in, width=3in}
+\caption{Executing the hello.exe application inside ICS-OS.}
+\end{figure}
+ 
 
 \subsubsection{Student Projects}
 
