@@ -99,12 +99,6 @@ laboratory, at the Institute of Computer Science, University of the Philippines
 Los Ba\~nos. The students who took the course are in their third year and
 has completed the data structures and assembly language prerequisites.
 
-%%\cite{silberschatz:osc},\cite{tanenbaum:osdai},\cite{dayo:dexos},
-%%\cite{claypool:fossil},\cite{christopher:nachos},\cite{gary:nachos},
-%%\cite{tanenbaum:minix},\cite{black:osfs},\cite{hovemeyer:geekos},
-%%\cite{anderson:survey}
-
-
 \section{Related Work}
 Several instructional operating systems have been proposed and developed in 
 the past\cite{anderson:survey}. This section briefly describes the popular ones to highlight
@@ -183,7 +177,7 @@ shell.
 \begin{figure}
 \centering
 \epsfig{file=ls.eps, height=2in, width=3in}
-\caption{Executing the \textit{ls} command.}
+\caption{Executing the internal\textit{ls} command.}
 \end{figure}
 
 
@@ -234,8 +228,8 @@ Figure 1).
 
 \subsubsection{Adding a new shell command}
 The best way to understand how ICS-OS works is to start with the shell since 
-it contains the commands the users can use to access the services provided 
-by the operating system. Thus in the next activity,  students modify the kernel,
+it contains the commands the users can use to access the services provided.
+Thus in the next activity,  students modify the kernel,
 particularly the shell, by adding an internal command. The students were
 directed to navigate to the console source code (kernel/console/console.c). 
 They were asked to modify the function console\_execute() by adding the 
