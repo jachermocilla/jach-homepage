@@ -230,24 +230,25 @@ function console\_execute() to add the following code.
 
 \begin{verbatim}
 //check if a pathcut command was executed
-    if (u[command_length - 1] == ':') 
-                {
-                    char temp[512];
-                    sprintf(temp,"cd %s",u);            
-                    console_execute(temp); 
-                }
-                else
-    /*----------------------START------------------*/
-    if (strcmp(u,"hello")==0)
-                {
-                   printf("Hello World command!\n");
-                }
-                else
-    /*-----------------------END------------------*/
-    if (strcmp(u,"fgman")==0)
-                {
-                    fg_set_state(1);
-                }\end{verbatim}
+if (u[command_length - 1] == ':') 
+{
+  char temp[512];
+  sprintf(temp,"cd %s",u);            
+  console_execute(temp); 
+}
+else
+/*----------------------START------------------*/
+if (strcmp(u,"hello")==0)
+{
+  printf("Hello World command!\n");
+}
+else
+/*-----------------------END------------------*/
+if (strcmp(u,"fgman")==0)
+{
+  fg_set_state(1);
+}
+\end{verbatim}
 
 
 
