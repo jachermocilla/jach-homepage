@@ -185,10 +185,11 @@ shell.
 
 \subsection{Development Environment}
 A convenient environment for operating system kernel development is essential.
-The compilers, build tools, disk utilities, and emulators should be readily 
-available on the development machine. A linux environment can provide all these
-tools. Thus, the laboratory computers were reformatted and Ubuntu was installed.
-The following additional packages were also added to complete the environment.
+The compilers, assembplers, build tools, disk utilities, and emulators should
+be readily available on the development machine. A linux environment can 
+provide all these tools. Thus, the laboratory computers were reformatted and
+Ubuntu was installed. The following additional packages were also added to 
+complete the environment.
 \begin{itemize}
  \item Make
  \item GCC/TCC
@@ -207,7 +208,7 @@ This activity, although not directly related to ICS-OS, was conducted in order
 for the students to understand how a PC boots. They were asked to develop a
 simple bootloader using assembly language. The exercise was then extended so
 that the CPU goes into the protected mode instead of the default real mode.
-This is because modern operating systems run in protected as with the case
+This is because modern operating systems run in protected, as with the case
 of ICS-OS.
 
 \subsubsection{Download, Build, and Test}
@@ -293,6 +294,27 @@ application.
 \caption{Executing the hello.exe application inside ICS-OS.}
 \end{figure}
  
+
+\subsubsection{Add a new system call}
+The last guided activity for the students is how to add a system call.
+System calls are the primary mechanism to access the services provided 
+by an operating system. The students were directed to open 
+kernel/dexapi/dex32API.c and add the following function definition.
+
+\begin{verbatim}
+int my_syscall(){
+   printf("My own system call got called!\n");
+   return 0;
+}
+\end{verbatim}
+
+Then the function api\_init() was modified by adding a call to 
+api\_addsystemcall()
+\begin{verbatim}
+  api_addsystemcall(0x9F,my_syscall,0,0)
+\end{verbatim}
+
+
 
 \subsubsection{Student Projects}
 
