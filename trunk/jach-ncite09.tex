@@ -262,8 +262,8 @@ Application development in ICS-OS is done via a software development kit.
 The externally callable functions and system calls are implemented in the file 
 sdk/tccsdk.c. User programs are linked against this file to generate the
 executable code that is compatible and runnable within ICS-OS. To ease the 
-development process, a Makefile was created to perform the building 
-automatically. 
+development process, a Makefile was created to perform the build
+automatically. An example Makefile is shown below.
 
 \begin{verbatim}
 CC=gcc
@@ -282,9 +282,15 @@ clean:
         rm $(EXE)
 \end{verbatim}
 
+In this actvity, students were asked to develop a simple program that can 
+be executed from within ICS-OS. They created their program folder within
+the contrib/ directory and copied the Makefile. The following commands built 
+their program and prepared the executable for installation later.
 
-In this actvity, students were asked to develop a simple
-program that can be executed from within ICS-OS. 
+\begin{verbatim}
+ hello$make
+ hello$make install
+\end{verbatim}
 
 
 \subsubsection{Student Projects}
