@@ -225,18 +225,11 @@ The third command starts Bochs\cite{bochs:site} which loads ICS-OS (Figure 1)
 \subsubsection{Adding a new internal shell command}
 The next activity is for the students to modify the kernel, particularly 
 the shell, by adding an internal command. The students was guided to 
-navigate to the console source code (kernel/console/console.c) and modify the 
-function console\_execute() to add the following code.
+navigate to the console source code (kernel/console/console.c). They were
+asked to modify the function  console\_execute() by adding the following code
+fragment.
 
 \begin{verbatim}
-//check if a pathcut command was executed
-if (u[command_length - 1] == ':') 
-{
-  char temp[512];
-  sprintf(temp,"cd %s",u);            
-  console_execute(temp); 
-}
-else
 /*--START-*/
 if (strcmp(u,"hello")==0)
 {
@@ -244,14 +237,7 @@ if (strcmp(u,"hello")==0)
 }
 else
 /*--END--*/
-if (strcmp(u,"fgman")==0)
-{
-  fg_set_state(1);
-}
 \end{verbatim}
-
-
-
 
 \section{Results and Discussion}
 
