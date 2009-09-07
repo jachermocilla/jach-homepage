@@ -188,7 +188,7 @@ shell.
 
 \section{Teaching with ICS-OS}
 
-\subsection{The Development Environment}
+\subsection{Development Environment}
 A convenient environment for operating system kernel development is essential.
 The compilers, build tools, disk utilities, and emulators should be readily 
 available on the development machine. A linux environment can provide all these
@@ -223,6 +223,34 @@ and thus requires adminstrator privileges so the \textit{sudo} command is used.
 The third command starts Bochs\cite{bochs:site} which loads ICS-OS (Figure 1)
 
 \subsubsection{Adding a new internal shell command}
+The next activity is for the students to modify the kernel, particularly 
+the shell, by adding an internal command. The students was guided to 
+navigate to the console source code (kernel/console/console.c) and modify the 
+function console_execute() to add the following code.
+\begin{verbatim}
+//check if a pathcut command was executed
+    if (u[command_length - 1] == ':') 
+                {
+                    char temp[512];
+                    sprintf(temp,"cd %s",u);            
+                    console_execute(temp); 
+                }
+                else
+    /*----------------------START------------------*/
+    if (strcmp(u,"hello")==0)
+                {
+                   printf("Hello World command!\n");
+                }
+                else
+    /*-----------------------END------------------*/
+    if (strcmp(u,"fgman")==0)
+                {
+                    fg_set_state(1);
+                }
+\end{verbatim}
+
+
+
 
 \section{Results and Discussion}
 
