@@ -309,11 +309,21 @@ int my_syscall(){
 \end{verbatim}
 
 Then the function api\_init() was modified by adding a call to 
-api\_addsystemcall()
+api\_addsystemcall().The system call number for my\_call() is 0x9F.
 \begin{verbatim}
-  api_addsystemcall(0x9F,my_syscall,0,0)
+api_addsystemcall(0x9F,my_syscall,0,0)
 \end{verbatim}
 
+A user application was developed to call the system call directly through 
+the number.
+
+\begin{verbatim}
+int main()
+{
+  dexsdk_systemcall(0x9F,0,0,0,0,0);
+  return 0;
+}
+\end{verbatim}
 
 
 \subsubsection{Student Projects}
