@@ -177,7 +177,7 @@ shell.
 \begin{figure}
 \centering
 \epsfig{file=ls.eps, height=2in, width=3in}
-\caption{Executing the internal\textit{ls} command.}
+\caption{Executing the internal \textit{ls} command.}
 \end{figure}
 
 
@@ -185,7 +185,7 @@ shell.
 
 \subsection{Development Environment}
 A convenient environment for operating system kernel development is essential.
-The compilers, assembplers, build tools, disk utilities, and emulators should
+The compilers, assemblers, build tools, disk utilities, and emulators should
 be readily available on the development machine. A linux environment can 
 provide all these tools. Thus, the laboratory computers were reformatted and
 Ubuntu was installed. The following additional packages were also added to 
@@ -255,7 +255,7 @@ The result of this activity is shown in Figure 4.
 \end{figure}
 
 
-\subsubsection{Developing User Applications}
+\subsubsection{Develop user applications}
 Application development in ICS-OS is done via a software development kit.
 The externally callable functions and system calls are implemented in the file 
 sdk/tccsdk.c. User programs are linked against this file to generate the
@@ -379,22 +379,26 @@ First, not all students are fluent in C programming. Some students have never
 worked on a relatively large source code base and were lost easily in the 
 directory structure of ICS-OS. Second, during the project proposal stage,
 students proposed ambitious projects that eventually did not get implemented.
-Lastly, since ICS-OS was presented only during the second half of the semester,
+Third, since ICS-OS was presented only during the second half of the semester,
 the students did not have enough time to explore and study the source code of
-ICS-OS.
+ICS-OS. Lastly, during the implementation phase of the projects, some of the 
+common functions needed by the students for ther program are not yet
+implemented. Once such function is scanf(). Thus students need to find
+alternative functions to get input from the user.
 
 The use of ICS-OS in teaching operating systems concepts has achieved the 
-following objectives.
-
+following objectives for students.
 \begin{itemize}
-\item{Exposes how an operating system works from the bare metal 
-(real hardware/emulator)}
-\item{Students were able to see the big picture on how a computer system works}
-\item{Understand the separation of kernel and user space}
-\item{Understand how system calls work and the advatages of using
-application programming interfaces and software development kits.}
+\item{They learn how an operating system works from the bare metal 
+(real hardware/emulator).}
+\item{They were able to see the big picture on how a computer system works.}
+\item{They were able to understand the separation of kernel space and 
+user space}
+\item{They were able to understand how programs are loaded and how processes 
+are created and executed.}
+\item{They were ablr to understand how system calls work and the advantages
+of using application programming interfaces and software development kits.}
 \end{itemize}
-
 
 \section{Conclusion and Future Work}
 In conclusion, operating systems concepts can be best understood by students
