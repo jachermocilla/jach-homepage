@@ -83,14 +83,15 @@ require a reboot of the development machine for testing. Unnecessary
 boostrapping is no longer needed since the test machine is a software
 application running on the development machine itself.
  
-The delivery of an operating systems course is usually through a lecture and 
-a laboratory component. A popular textbook used by instructors in the 
-lecture is the dinosaur book by Silberschatz and Galvin \cite{silberschatz:osc}.
-Typical laboratory activities involves learning to use a unix-based operating
-system, developing simulations for different process scheduling algorithms, 
-understanding the fork() and exec() system calls, programming using user
-level threads, and implementing interprocess communications. All of these
-however are in user space and do not involve writing kernel code.
+The delivery of an operating systems course is usually through a
+lecture and a laboratory component. A popular textbook used by instructors in
+the lecture is the dinosaur book by Silberschatz and Galvin 
+\cite{silberschatz:osc}. Typical laboratory activities involves learning to 
+use a unix-based operating system, developing simulations for different process
+scheduling algorithms, understanding the fork() and exec() system calls, 
+programming using user level threads, and implementing interprocess
+communications. All of these however are in user space and do not involve 
+writing kernel code.
 
 This paper presents ICS-OS and the experiences and results of using it for 
 teaching an undergraduate operating systems course, specifically in the
@@ -232,11 +233,13 @@ The third command starts Bochs\cite{bochs:site} which loads ICS-OS (see
 Figure 1).
 
 \subsubsection{Adding a new shell command}
-The next activity is for the students to modify the kernel, particularly 
-the shell, by adding an internal command. The students was guided to 
-navigate to the console source code (kernel/console/console.c). They were
-asked to modify the function  console\_execute() by adding the following simple
-code fragment.
+The best way to understand how ICS-OS works is to start with the shell since 
+it contains the commands the users can use to access the services provided 
+by the operating system. Thus in the next activity,  students modify the kernel,
+particularly the shell, by adding an internal command. The students were
+directed to navigate to the console source code (kernel/console/console.c). 
+They were asked to modify the function console\_execute() by adding the 
+following simple code fragment.
 
 \begin{verbatim}
 /*--START--*/
