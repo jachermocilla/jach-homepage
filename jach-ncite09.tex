@@ -311,12 +311,12 @@ int my_syscall(){
 \end{verbatim}
 
 Then the function api\_init() was modified by adding a call to 
-api\_addsystemcall().The system call number for my\_call() is 0x9F.
+api\_addsystemcall().The system call number for my\_syscall() is 0x9F.
 \begin{verbatim}
 api_addsystemcall(0x9F,my_syscall,0,0)
 \end{verbatim}
 
-A user application was developed to test the system call directly by invoking
+A user application,shown below, was developed to test the system call directly by invoking
 it through the number. Figure 6 shows the result of the execution.
 
 \begin{verbatim}
