@@ -304,15 +304,16 @@ by an operating system. The students were directed to open
 kernel/dexapi/dex32API.c and add the following function definition.
 
 \begin{verbatim}
-int MySyscall(){
+int my_syscall(){
    printf("My own system call got called!\n");
    return 0;
 }
 \end{verbatim}
 
 Then, the function api\_init() was modified by adding a call to 
-api\_addsystemcall().The system call number for 
-MySyscall(), in this example, is 0x9F.
+api\_addsystemcall().The system call number chosen for
+my\_syscall(), in this example, is 0x9F.
+
 \begin{verbatim}
 api_addsystemcall(0x9F,MySyscall,0,0);
 \end{verbatim}
