@@ -262,8 +262,9 @@ Application development in ICS-OS is done via a software development kit.
 The externally callable functions and system calls are implemented in the file 
 sdk/tccsdk.c. User programs are linked against this file to generate the
 executable code that is compatible and runnable within ICS-OS. To ease the 
-development process, a Makefile was created to perform the build
-automatically. The Makefile for the hello.exe application is shown below.
+development process, a Makefile template was created to perform the build
+automatically. As an example, the Makefile for the hello.exe application is
+shown below.
 
 \begin{verbatim}
 CC=gcc
@@ -282,11 +283,20 @@ clean:
         rm $(EXE)
 \end{verbatim}
 
-For this activity, students were asked to develop an external program, 
-which not part of the shell, that can be executed from within ICS-OS. 
-They created their program folder within the contrib/ directory, 
-for example hello/, and copied the sample Makefile in 
-it. The \textit{install} target in the Makefile will simply copy the 
+For the activity, the students were asked to develop the hello.exe 
+application, which is not part of the shell, but can still be executed 
+within ICS-OS. First they created the hello/ folder relative to the contrib/ 
+directory and copied the sample Makefile in it. The Makefile for hello.exe is 
+is shown above. The hello.c source file which contains the application logic,
+should reside in the hello/ folder. The build and installation process is 
+shown below.
+
+\begin{verbatim}
+/contrib/hello$make
+/contrib/hello$make install
+\end{verbatim}
+
+The \textit{install} target in the Makefile will simply copy the 
 executable to the apps/ folder. It is only after the distribution floppy image 
 is created that the application will be available inside ICS-OS for execution. 
 Figure 5 shows the hello.exe application running.
