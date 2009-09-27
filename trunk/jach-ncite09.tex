@@ -287,13 +287,13 @@ For the activity, the students were asked to develop the hello.exe
 application, which is not part of the shell, but can still be executed 
 within ICS-OS. First they created the hello/ folder relative to the contrib/ 
 directory and copied the sample Makefile in it. The Makefile for hello.exe 
-is shown above. The hello.c source file which contains the application logic,
-should reside in the hello/ folder. The build and installation process is 
-shown below.
+is shown above. Then, the hello.c source file, which contains the application
+logic, was coded inside the hello/ folder. The application was built and
+installed using the commands below.
 
 \begin{verbatim}
-/contrib/hello$make
-/contrib/hello$make install
+$make
+$make install
 \end{verbatim}
 
 The \textit{install} target in the Makefile will simply copy the 
