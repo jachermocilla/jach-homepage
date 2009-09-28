@@ -90,7 +90,7 @@ the lecture is the dinosaur book by Silberschatz and Galvin
 use a Unix-based operating system, developing simulations for different process
 scheduling algorithms, understanding the fork() and exec() system calls, 
 programming using user level threads, and implementing interprocess
-communications. All of these however are in user space and do not involve 
+communication. All of these however are in user space and do not involve 
 writing kernel code.
 
 This paper presents ICS-OS and the experiences and results of using it for 
@@ -298,8 +298,8 @@ $make install
 
 The \textit{install} target in the Makefile will simply copy the 
 executable to the apps/ folder. It is only after the distribution floppy image 
-is created that the application will be available inside ICS-OS for execution.
-See subsection 4.2.2. Figure 5 shows the output of hello.exe.
+is created that the application will be available inside ICS-OS for execution 
+(see subsection 4.2.2). Figure 5 shows the output of hello.exe.
 
 \begin{figure}
 \centering
@@ -393,7 +393,8 @@ students proposed ambitious projects that eventually did not get implemented.
 Lastly, during the implementation phase of the projects, some of the 
 common functions needed by the students for their programs are not yet
 implemented. One such function is scanf(). Thus, students need to find
-alternative functions, such as gets(), to get input from the user.
+alternative functions, such as gets(), to get input from the user or 
+implement the functions on their own.
 
 The use of ICS-OS in teaching operating systems concepts, however, has 
 achieved the following objectives for the students.
