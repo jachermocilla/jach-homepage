@@ -139,7 +139,7 @@ manager, process manager, device manager, and virtual file system. DEX-OS runs
 on the Intel 386 platform in 32-bit protected mode.
 
 \section{ICS-OS Overview}
-Similar to the linux philosophy, ICS-OS can be considered as a 
+Similar to the Linux philosophy, ICS-OS can be considered as a 
 \textit{distribution} that is based on the DEX-OS kernel. ICS-OS provides 
 an environment for learning operating systems by kernel programming. 
 A set of tools and utilities are packaged with ICS-OS to make it easy 
@@ -186,10 +186,11 @@ shell.
 \subsection{Development Environment}
 A convenient environment for operating system kernel development is essential.
 The compilers, assemblers, build tools, disk utilities, and emulators should
-be readily available on the development machine. A linux environment can 
+be readily available on the development machine. A Linux system can 
 provide all these tools. Thus, the laboratory computers were reformatted and
 Ubuntu was installed. The following additional packages were also added to 
-complete the environment.
+complete the setup.
+
 \begin{itemize}
  \item Make
  \item GCC/TCC
@@ -223,17 +224,17 @@ After extracting, students built and tested ICS-OS using the commands below.
 (3) $bochs -q
 \end{verbatim}
 
-The first command creates the kernel binary in ELF format.The second command 
+The first command creates the kernel binary in ELF format. The second command 
 builds the distribution floppy image using the loopback device for mounting,
-and thus requires administrator privileges, so the \textit{sudo} command is used.
-The third command starts Bochs\cite{bochs:site} which loads ICS-OS (see 
+and thus requires administrator privileges, so the \textit{sudo} command is 
+used. The third command starts Bochs\cite{bochs:site} which loads ICS-OS (see 
 Figure 1).
 
 \subsubsection{Add a new shell command}
-The best way to understand how ICS-OS works is to start with the shell since 
-it contains the commands the users can use to access the operating system 
-services. Thus in the next activity, students modified the kernel,
-specifically the shell, by adding an internal hello shell command. 
+The best way to understand how ICS-OS works internally is to start with the 
+shell since it contains the commands the users can use to access the 
+operating system services. Thus, in the next activity, students modified the 
+kernel, specifically the shell, by adding an internal hello shell command. 
 The students were directed to navigate to the console source code
 (kernel/console/console.c). They were asked to modify the function
 console\_execute() by adding the following simple code fragment.
@@ -284,7 +285,7 @@ clean:
 \end{verbatim}
 
 For the activity, the students were asked to develop the hello.exe 
-application, which is not part of the shell, but can still be executed 
+application, which is not part of the shell but can still be executed 
 within ICS-OS. First they created the hello/ folder relative to the contrib/ 
 directory and copied the sample Makefile in it. The Makefile for hello.exe 
 is shown above. Then, the hello.c source file, which contains the application
@@ -322,7 +323,7 @@ int my_syscall(){
 \end{verbatim}
 
 Then, the function api\_init() was modified by adding a call to 
-api\_addsystemcall().The system call number chosen for
+api\_addsystemcall(). The system call number chosen for
 my\_syscall(), in this example, is 0x9F.
 
 \begin{verbatim}
