@@ -1,0 +1,23 @@
+h1,h2{
+   font-family: "Arial", "Helvetica", sans-serif;
+}
+
+p{
+  	font-family: "Arial", "Helvetica", sans-serif;
+}
+
+a{
+   color: #FFCC00;
+}
+
+td,li,body {
+   font-size: 12pt;
+   font-family: "Arial", "Helvetica", sans-serif;
+   background: #4477AA;
+   color: #FFFFFF;
+}
+
+.exam {
+   background-color: green;
+   color: yellow;
+}
