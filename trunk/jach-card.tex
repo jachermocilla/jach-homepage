@@ -1,0 +1,85 @@
+% =========================================================================
+% File Name: c.tex
+% Last Modification Date: %G%     %U%
+% Current Version: %M%    %I%
+% File Creation Date: Sat Apr 20 22:52:24 1996
+% Author: Jan Erik Odegard  <odegard@ece.rice.edu>
+%
+% Copyright: All software, documentation, and related files in this
+%            distribution are Copyright (c) 1996  Rice University
+% =========================================================================
+\documentclass[11pt]{article}
+\usepackage[dvips]{graphicx}
+\usepackage{latexsym}
+\usepackage{times}
+\pagestyle{empty}
+\setlength{\textwidth}{8in}
+\setlength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{-1in}
+\setlength{\textheight}{10in}
+\setlength{\topmargin}{-1in}
+\newcommand{\clogo}{\includegraphics[scale=0.51]{./icslogo.eps}}
+%\newcommand{\clogo}{}
+%
+% EDIT THE FOLLOWING VARIABLES
+%
+\newcommand{\cname}{Joseph Anthony C. Hermocilla}
+\newcommand{\ctitlea}{Assistant Professor}
+\newcommand{\ctitleb}{}
+\newcommand{\ctitlec}{}
+\newcommand{\cadra}{INSTITUTE OF COMPUTER SCIENCE}
+\newcommand{\cadrb}{College of Arts and Sciences}
+\newcommand{\cadrc}{University of the Philippines Los Ba\~{n}os}
+\newcommand{\cadrd}{College 4031, Laguna, PHILIPPINES}
+\newcommand{\mobile}{910-832-3042}
+\newcommand{\cphone}{49-536-2313}
+\newcommand{\cfax}{49-536-2302}
+\newcommand{\cemaila}{jachermocilla@uplb.edu.ph}
+\newcommand{\cemailb}{jachermocilla@gmail.com}
+\newcommand{\curla}{http:$/\!/$jachermocilla.org}
+\newcommand{\curlb}{http:$/\!/$ics.uplb.edu.ph}
+\begin{document}
+\setlength{\unitlength}{1mm}
+\begin{picture}(200,240)(-7,0)
+  \multiput(0,0)(0,56){4}{%
+    \multiput(0,0)(95,0){2}{
+      \begin{picture}(89,51)(0,0)
+        \put(0,52){\line(0,1){3}}
+        \put(-1,51){\line(-1,0){3}}
+        \put(89,52){\line(0,1){3}}
+        \put(90,51){\line(1,0){3}}
+        \put(3,48){\line(1,0){83}}
+        \put(35,42){\large\cname}
+        \put(35,39){\textsc{\scriptsize\ctitlea}}
+%        \put(35,36){\textsc{\scriptsize\ctitleb}}
+%        \put(35,33){\textsc{\scriptsize\ctitlec}}
+%        \put(35,27){\scriptsize \cadra}
+        \put(35,30){\scriptsize \cadra}
+        \put(35,27){\scriptsize \cadrb}
+        \put(35,24){\scriptsize \cadrc}
+        \put(35,21){\scriptsize \cadrd}
+        \put(35,14){\textsc{\scriptsize Email:}}
+        \put(49,14){\scriptsize \cemaila}
+        \put(35,11){\textsc{\scriptsize Gmail:}}
+        \put(49,11){\scriptsize \cemailb}
+        \put(35,8){\textsc{\scriptsize website:}}
+        \put(49,8){\scriptsize \curla}
+        \put(35,5){\textsc{\scriptsize url ics:}}
+        \put(49,5){\scriptsize \curlb}
+        \put(5,20){\clogo}
+        \put(5,11){\textsc{\scriptsize Mob:}}
+        \put(15,11){\scriptsize \mobile}
+        \put(5,8){\textsc{\scriptsize Phone:}}
+        \put(15,8){\scriptsize \cphone}
+        \put(5,5){\textsc{\scriptsize Fax:}}
+        \put(15,5){\scriptsize \cfax}
+        \put(3,3){\line(1,0){83}}
+        \put(0,-1){\line(0,-1){3}}
+        \put(-1,0){\line(-1,0){3}}
+        \put(89,-1){\line(0,-1){3}}
+        \put(90,0){\line(1,0){3}}
+      \end{picture}}}
+\end{picture}
+\end{document}
+
+
