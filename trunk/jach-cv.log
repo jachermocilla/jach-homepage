@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  8 SEP 2010 11:18
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.9.1)  8 SEP 2010 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -230,17 +230,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Here is how much of TeX's memory you used:
  4069 strings out of 495061
  59275 string characters out of 1182622
- 130129 words of memory out of 3000000
+ 129129 words of memory out of 3000000
  7235 multiletter control sequences out of 15000+50000
  4721 words of font info for 18 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,9n,21p,257b,375s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,9n,21p,404b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
 m/cmtt10.pfb>
-Output written on jach-cv.pdf (2 pages, 70287 bytes).
+Output written on jach-cv.pdf (2 pages, 71702 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
