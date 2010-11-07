@@ -1,0 +1,312 @@
+<html>
+   <head>
+      <title>
+         CMSC 125 Second Sem 2009-2010
+      </title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+
+   <body>
+       <a href="http://ics.uplb.edu.ph"><img src="icslogo.gif" align="right"></a>
+      <h1><a href="http://www.ics.uplb.edu.ph/courses/ugrad/cmsc/125">CMSC 125 Operating Systems</a></h1>
+      <h3>Second Semester 2009-2010</h3>
+      Quick Links: <a href="#lecture">[ Lecture ]</a> <a href="#lab">[ Laboratory ]</a><a href="#resources">[ Resources ]</a><a href="http://spreadsheets.google.com/pub?key=tE4hMJLoUcSE56IY7W-ZzhQ&single=true&gid=0&output=html">[ Class Record ]</a><a href="http://ics-os.googlecode.com">[ ICS-OS ]</a>
+      <hr align="left" width="640">
+      <ul>
+         <li><b>News/Announcements</b></li>
+         <p>
+         <ul>
+            <li style="color:yellow;">[03/17/10] Final Exam is on 24 March 2010, 2pm-4pm ICSLH MH. Project presentation is on 25-26 March 2010.</li>
+            <li>[02/24/10] <a href="125projspecs.pdf">Project description</a> is now available.</li>
+            <li>[02/17/10] Links to slides have been updated.</a></li>
+            <li>[02/07/10] Second Exam moved to Thursday, 11 February 2010.</a></li>
+            <li>[02/03/10] <a href="http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html">Static Libraries, Dynamic Linking, and Dynamic Loading in Linux</a></li>
+            <li>[02/03/10] Video Resource: <a href="http://academicearth.org/courses/operating-systems-and-system-programming">OS Course @UCB</a></li>
+            <li>[01/07/10] Assignment: Research the CPU scheduling algorithms used in Solaris, WinXP, and Linux. Submit a report of your findings on two pages of yellow paper(handwritten). Due next meeting.</li>
+            <li>[12/18/09] Merry Christmas and a Happy New Year!</li>
+            <li>[12/12/09] Class Record is now up.</li>
+            <li>[12/10/09] A word of warning to those who leave early from class: If you get caught, you get a grade of 5.</li>
+            <li>[11/24/09] Please read <a href="http://www.cs.berkeley.edu/%7Ebrewer/cs262/UNIX-annotated.pdf">The UNIX Time Sharing System</a>. Prepare for a quiz.</li>
+            <li>[11/12/09] Please read <a href="http://www.cio.com.au/article/325323/cio_blast_from_past_40_years_multics_1969-2009">40 Years of Multics</a></li>
+            <li>[11/09/09] Welcome!</li>
+         </ul>
+         </p>
+         <li><b>Course Information</b></li>
+         <p>
+         Course Number: CMSC 125 <br/>
+         Course Title:  Operating Systems<br/>
+         Description: Processor management, memory management, file and disk management, resource management, concurrent processes, networks and distributed systems. <br/>
+         Prerequisites(Official): CMSC 123 or COI<br/>
+         Prerequisites(Recommended): CMSC 131 and CMSC 124<br/>
+         Lecture: Section ST, 8-9 TTh ICS LH1 <br/>
+         </p>
+
+         <li><b>Instructor Information</b></li>
+         <p>
+            Lecture:<br/>
+            <i>
+               <a href="index.html">Joseph Anthony C. Hermocilla</a> (jachermocilla@gmail.com)<br/>
+               PhySci C120
+            </i>
+            <br/><br/>
+
+            Laboratory: <br/>
+            <i>
+               <a href="http://joyzeecenteno.multiply.com/">Joycee P. Centeno</a> (jpcenteno@uplb.edu.ph)<br/>
+               PhySci C112 
+            </i>
+            <br/><br/>
+            <i>
+               <a href="http://sites.google.com/site/komsaylb/Home">Juan Miguel J. Bawagan</a> (jmjbawagan@uplb.edu.ph)<br/>
+               PhySci C114
+            </i>
+            <br/><br/>
+
+            Student Assistant: <br/>
+            <i>Girlie Gonzalez (girliegonzales@gmail.com)</i>
+         </p>
+
+         <li><b>Aim</b></li>
+         <p>The aim of this course is to introduce students to operating systems concepts</p>
+         <li><b>Objectives</b></li>
+         <p>
+            At the end of this course the students should be able to:
+         <ol>
+            <li>Describe the purpose and functions of an operating system;</li>
+            <li>Design and implement programs to perform simple operating system tasks; and</li>
+            <li>Evaluate the performance of different operating system algorithms.</li>
+         </ol>
+         </p>
+
+         <li><b>Topics</b></li>
+         <p>
+          <ol>
+            <li>Overview</li>
+              <ol>
+                <li>Introduction</li>
+                <li>Computer Systems Structures</li>
+                <li>Operating System Structures</li>
+              </ol>
+            <li>Process Management</li>
+              <ol>
+                <li>Processes</li>
+                <li>CPU Scheduling</li>
+                <li>Process Synchronization</li>
+                <li>Deadlocks</li>
+              </ol>  
+            <li>Storage Management</li>
+              <ol>
+                <li>Memory Management</li>
+                <li>Virtual Memory</li>
+                <li>File-Systen Interface</li>
+                <li>File-System Implementation</li>
+              </ol>
+            <li>I/O Systems </li>
+              <ol>
+                <li>I/O Systems</li>
+                <li>Secondary-Storage Structure</li>
+                <li>Tertiary-Storage Structure</li>
+              </ol>  
+            <li>Protection</li>
+              <ol>
+                <li>Protection</li>
+              </ol>            
+          </ol>
+              
+         </p>
+
+         <li><b>Evaluation/Grading(tentative)</b></li>
+         <p>
+           <table>
+            <tr><td>(A)</td><td>3 Long Exams</td><td>45%</td></tr>
+            <tr><td>(B)</td><td>Quizzes</td><td>5%</td></tr>
+            <tr><td>(C)</td><td>Project</td><td>10%</td></tr>
+            <tr><td>(D)</td><td>Laboratory</td><td>40%</td></tr>
+            <tr><td>(E)</td><td>Prefinal</td><td>A+B+C+D</td></tr>
+            <tr><td>(F)</td><td>Final Exam</td><td>100%</td></tr>
+            <tr><td>(G)</td><td>Final Grade</td><td>20%xF+80%xE</td></tr>
+            </table>
+         </p>
+
+         <li><b><a name="lecture">Lecture Schedule (tentative)</a></b></li>
+         <p>
+         All slides are available <a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/index.html">here</a>
+         <table border="1">
+            <tr><td>Lec</td><td>Date</td><td>Topic</td><td>Readings</td><td>Slides/Audio</td></tr>
+            <tr><td>1</td><td>11/10/09 T</td><td>Introduction</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>2</td><td>11/12/09 Th</td><td>Introduction: Interrupts</td><td>OSBOOK Ch. 1</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch1.pdf">PDF</a></td></tr>
+            <tr><td>3</td><td>11/17/09 T</td><td>Introduction: Multiprogramming and Timesharing</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>4</td><td>11/19/09 Th</td><td>Introduction: Protection and Security</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>5</td><td>11/24/09 T</td><td>Operating System Structures: System Calls</td><td>OSBOOK Ch. 2</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch2.pdf">PDF</a></td></tr>
+            <tr><td>6</td><td>11/26/09 Th</td><td>UNIX System Structure</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+            <tr><td>7</td><td>12/01/09 T</td><td>System Bootup</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>8</td><td>12/03/09 Th</td><td>Context Switch</td><td>OSBOOK Ch. 3</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch3.pdf">PDF</a></td></tr>
+            <tr><td>9</td><td>12/08/09 T</td><td>The Producer-Consumer Problem</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>10</td><td>12/10/09 Th</td><td>Remote Method Invocation</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>11</td><td>12/15/09 T</td><td>Threads</td><td>OSBOOK Ch. 4</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch4.pdf">PDF</a></td></tr>            
+            <tr><td>12</td><td>12/17/09 Th</td><td>FIRST EXAM</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+            <tr><td>*</td><td>12/19/09 S</td><td>CHRISTMAS VACATION</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+
+            <tr><td>13</td><td>01/05/10 T</td><td>CPU Scheduling: Priority Scheduling</td><td>OSBOOK Ch. 5</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch5.pdf">PDF</a></td></tr>
+            <tr><td>14</td><td>01/07/10 Th</td><td>CPU Scheduling: Algorithm Evaluation</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>15</td><td>01/12/10 T</td><td>Process Synchronization: Hardware Solution to the Critical Section Problem</td><td>OSBOOK Ch. 6</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch6.pdf">PDF</a></td></tr>
+            <tr><td>16</td><td>01/14/10 Th</td><td>Classic Synchronization Problems: Dining Philosopher's Problem</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>17</td><td>01/19/10 T</td><td>Concurrent Transactions: Undo/Redo </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>18</td><td>01/21/10 Th</td><td>Deadlock Avoidance: Resource Allocation Graph</td><td><a href="http://academicearth.org/lectures/tips-for-working-in-project-team-cooperating-processes-and-deadlock">Video</a></td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch7.pdf">PDF</a></td></tr>
+            <tr><td>19</td><td>01/26/10 T</td><td>(no meeting)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>20</td><td>01/28/10 Th</td><td>Recovering from Deadlocks</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+            <tr><td>21</td><td>02/02/10 T</td><td>Memory Management: Dynamic Loading</td><td><a href="http://academicearth.org/lectures/address-translation">Video</a></td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch8.pdf">PDF</a></td></tr>
+            <tr><td>22</td><td>02/04/10 Th</td><td>Memory Management: Shared Pages</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>23</td><td>02/09/10 T</td><td>Memory Management for the Intel Pentium</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>24</td><td>02/11/10 Th</td><td>SECOND EXAM</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>25</td><td>02/16/10 T</td><td>Virtual Memory: Copy on Write</td><td>&nbsp;</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch9.pdf">PDF</a></td></tr>
+            <tr><td>26</td><td>02/18/10 Th</td><td>Virtual Memory: LRU Approximation Algorithms</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>27</td><td>02/23/10 T</td><td>Virtual Memory: Thrashing</td><td>&nbsp;</td><td>&nbsp;</td></tr>            
+            <tr><td>28</td><td>02/25/10 Th</td><td>(no meeting)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+            <tr><td>29</td><td>03/02/10 T</td><td>Virtual Memory: Other Issues</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>30</td><td>03/04/10 Th</td><td>File System Interface (Mr. Juan Miguel Bawagan)</td><td>&nbsp;</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch10.pdf">PDF</a></td></tr>
+            <tr><td>31</td><td>03/09/10 T</td><td>File System Interface: Mounting</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>32</td><td>03/11/10 Th</td><td>File System Implementation: Linked Allocation</td><td>&nbsp;</td><td><a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/slide-dir/PDF-dir/ch11.pdf">PDF</a></td></tr>
+            <tr><td>33</td><td>03/16/10 T</td><td>File System Implementation: Network File System</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>34</td><td>03/18/10 Th</td><td>THIRD EXAM</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>*</td><td>03/20/10 S</td><td>END OF CLASSES</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+         </table>
+         </p>
+
+
+         <li><b><a name="lab">Laboratory Schedule (tentative)</a></b></li>
+         <p>
+         <table border="1">
+            <tr><td>Week</td><td>Date</td><td>Topic</td><td>Readings/Exercise</td></tr>
+            <tr><td>1</td><td>11/09/09-11/13/09</td><td>Introduction</td><td>&nbsp;</td></tr>
+            <tr><td>2</td><td>11/16/09-11/20/09</td><td>Review of Linux</td>
+                <td>
+                  <ul>
+                    <li><a href="http://www.doc.ic.ac.uk/~wjk/UnixIntro/">Reading 1</a></li>
+                  </ul>
+                </td>
+            </tr>
+            <tr><td>3</td><td>11/23/09-11/27/09</td><td>Shell Scripting</td>
+                <td>
+                  <ul>
+                    <li><a href="http://freeos.com/guides/lsst/">Reading 1</a></li>
+                    <li><a href="http://tldp.org/LDP/abs/html/">Reading 2</a></li>
+                    <li><a href="http://www.panix.com/~elflord/unix/bash-tute.html">Reading 3</a></li>
+                    <li><a href="http://www.gnu.org/software/bash/manual/bashref.html">Reading 4</a></li>
+                  </ul>
+                </td>
+            </tr>
+            <tr><td>4</td><td>11/20/09-12/04/09</td><td>Understanding the PC Boot Process and the 386 32-bit Protected Mode</td>
+                <td>
+                  <ul>
+                    <li><a href="http://www.pcguide.com/ref/mbsys/bios/bootSequence-c.html">Reading 1</a></li>
+                    <li><a href="http://www.osdever.net/tutorials/hello_btldr.php">Reading 2</a></li>
+                    <li><a href="http://protected_mode.tripod.com/prashant/protmode.html">Reading 3</a></li>
+                    <li><a href="http://www.osdever.net/tutorials/brunmar/tutorial_02.php">Reading 4</a></li>
+                    <li><a href="http://www.osdever.net/tutorials/brunmar/simple_asm.txt">Sample Code</a></li>
+                  </ul>
+                </td>
+            </tr>
+
+            <tr><td>5</td><td>12/07/09-12/11/09</td><td>CPU Scheduling Simulation: SJF Non-preemptive</td><td>&nbsp;</td></tr>
+            <tr><td>6</td><td>12/14/09-12/18/09</td><td>CPU Scheduling Simulation: SJF Preemptive</td><td>&nbsp;</td></tr>
+
+            <tr><td>7</td><td>01/04/10-01/08/10</td><td>CPU Scheduling Simulation: Round Robin</td><td>&nbsp;</td></tr>
+            <tr><td>8</td><td>01/11/10-01/14/10</td><td>Linux process control: fork(), wait(), and exec() system calls </td><td>&nbsp;</td></tr>
+            <tr><td>9</td><td>01/18/10-01/22/10</td><td>Thread Programming Using PThreads</td><td>&nbsp;</td></tr>
+            <tr><td>10</td><td>01/25/10-01/29/10</td><td>Synchronization Problems: Producer-Consumer and the Dining Philosopher's Problem</td><td>&nbsp;</td></tr>
+
+            <tr><td>11</td><td>02/01/10-02/05/10</td><td>Interprocess Communication: Pipes, Signals, Message Queues, Semaphores, Shared Memory</td><td>&nbsp;</td></tr>
+            <tr><td>12</td><td>02/08/10-02/12/10</td><td>ICS-OS</td><td>&nbsp;</td></tr>
+            <tr><td>13</td><td>02/15/10-02/19/10</td><td>ICS-OS</td><td>&nbsp;</td></tr>
+            <tr><td>14</td><td>02/22/10-02/26/10</td><td>ICS-OS</td><td>&nbsp;</td></tr>
+
+            <tr><td>15</td><td>03/01/10-03/05/10</td><td>ICS-OS</td><td>&nbsp;</td></tr>
+            <tr><td>16</td><td>03/08/10-03/12/10</td><td>ICS-OS</td><td>&nbsp;</td></tr>
+            <tr><td>17</td><td>03/15/10-03/18/10</td><td>ICS-OS</td><td>&nbsp;</td></tr>
+         </table>
+         </p>
+
+         <li><b><a name="resources">Resources</a></b></li>
+         <p>
+            <ul>
+              <li>Textbook: [OSBOOK]Operating Systems Concepts by A. Silberschatz and P. Galvin (7th edition, latest is <a href="http://codex.cs.yale.edu/avi/os-book/OS8/os8c/index.html">8th</a> edition)</li>
+               <li>Supplementary Text and References</li>
+               <p>
+                  <ul>
+                     <li>Operating Systems: Basic Concepts by E. A. Albacea</li>
+                     <li>The Design of the Unix Operating System by M. J. Bach </li>
+                     <li>Modern Operating Systems: Design and Implementation by A. S. Tanenbaum</li>
+                  </ul>      
+               </p>
+               <li>Relevant Links to other OS courses</li>
+               <p>
+                  <ul>
+                     <li><a href="http://www.cs.cmu.edu/~410/">CMU OS Course</a></li>
+                     <li><a href="http://inst.eecs.berkeley.edu/~cs162/fa08/">UCB OS Course</a></li>
+                     <li><a href="http://www.cs.princeton.edu/courses/archive/fall04/cos318/">Princeton OS Course</a></li>
+                     <li><a href="http://www.stanford.edu/class/cs140/">Stanford OS Course</a></li>
+                     <li><a href="http://academicearth.org/courses/operating-systems-and-system-programming">Operating Systems and Systems Programming</a></li>
+                  </ul>      
+               </p>
+               <li>Software</li>
+               <p>
+                  <ul>
+                    <li><a href="http://www.stanford.edu/class/cs140/projects/pintos/pintos.html">PINTOS</a></li>
+                    <li><a href="http://www.cs.washington.edu/homes/tom/nachos/">NACHOS</a></li>
+                  </ul>
+               </p>
+               <li>Others(Tutorials, Manuals)</li>
+               <p>
+                  <ul>
+                     <li><a href="http://tldp.org/LDP/tlk/tlk.html">Linux Documentation Project: The Linux Kernel</a></li>
+                     <li><a href="http://www.osdev.org/">OSDEV</a></li>
+                     <li><a href="http://www.osdever.net/">Bonafide OS Development</a></li>
+                     <li><a href="http://www.kernel.org/">Linux Kernel Archive</a></li>
+                     <li><a href="http://www.x86.org/intel.doc/386manuals.htm">Intel 386 Manuals</a></li>
+                     <li><a href="http://www.brokenthorn.com/Resources/OSDevIndex.html">BrokenThorn</a></li>
+                     <li><a href="http://www.jamesmolloy.co.uk/tutorial_html/index.html">Roll your own toy UNIX-clone OS</a></li>
+                  </ul>   
+               </p>
+            </ul>
+         </p>
+
+         <li><b>Class Policies</b></li>
+         <p>
+            (TBA)
+         </p>
+         <li><b>Grading Programming Exercises</b></li>
+         <p>
+            <table border="1">
+               <tr><td>0</td><td>did not submit; no email received; student cheated</td></tr>
+               <tr><td>1</td><td>email received; no attachment found; did not follow submission guidelines</td></tr>
+               <tr><td>3</td><td>program does not compile due to syntax errors;missing files</td></tr>
+               <tr><td>5</td><td>program has sufficient code, builds, but has wrong results when run</td></tr>
+               <tr><td>7</td><td>program has sufficient code, builds, fails on some test case or lacks documentation;</td></tr>
+               <tr><td>10</td><td>program has sufficient code, builds, correct results on all test cases</td></tr>
+            </table>
+         </p>
+
+    </ul>
+
+   <hr align="left" width="30">
+   <p><a href="http://jachermocilla.org/index.html">[Home]</a><a href="http://jachermocilla.org/teaching.html">[Teaching]</a></p>      
+   <p style="font-size: 12px;"><i>$Id$</i></p> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8054053-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+   </body>
+</html>
